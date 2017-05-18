@@ -18,11 +18,15 @@ export default function TicketsSection () {
 function TicketsTable () {
   return (
     <div className='tickets-table'>
-      <TicketsRow title='1st round' date='18 May 2017' />
+      <TicketsRow className='soldout' title='1st round' date='18 May 2017' />
       <TicketsRow title='2nd round' date='25 May 2017' />
       <style jsx>{`
         .tickets-table {
           margin: 0 auto 30px;
+        }
+        .soldout {
+          color: grey;
+          text-decoration: line-through;
         }
       `}</style>
     </div>
